@@ -1,0 +1,48 @@
+@import './../../../styles/variables.scss';
+
+.converter {
+    background-color: $custom-blue-light-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: $basic-border-radius;
+    max-width: 420px;
+    margin: 0 auto;
+    box-shadow: $basic-shadow;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.card-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: space-between;
+
+    label {
+        width: 2.5em;
+    }
+
+    input {
+        padding: $input-padding;
+        background-color: rgba(253, 253, 253, 0.85);
+        border: none;
+        border-radius: 8pc;
+        position: relative;
+
+        &:focus-visible {
+            outline: none;
+        }
+
+        &[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    }
+
+    
+}

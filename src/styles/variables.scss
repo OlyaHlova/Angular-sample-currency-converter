@@ -1,0 +1,51 @@
+/* Color variables: */
+
+$basic-light-color:             #fff;
+$basic-dark-color:              #232c38;
+
+$custom-yellow-light-color:     rgba(209, 185, 2, 0.15);
+$custom-yellow-medium-color:    rgba(209, 185, 2, 0.82);
+$custom-violet-light-color:     rgba(82, 3, 132, 0.25);
+$custom-violet-medium-color:    rgba(82, 3, 132, 0.5);
+$custom-violet-dark-color:      rgba(82, 3, 132, 1);
+$custom-blue-light-color:       rgba(57, 47, 165, 0.2);
+$custom-blue-medium-color:      rgba(57, 47, 165, 1);
+
+// Background:
+$basic-light-bg-color:          $basic-light-color;
+$basic-filling-bg-color:        $custom-yellow-light-color;
+$secondary-filling-bg-color:    $custom-violet-light-color;
+
+// Font
+$basic-dark-font-color:         $basic-dark-color;
+$basic-light-font-color:        $basic-light-color;
+$basic-title-font-color:        $custom-blue-medium-color;
+
+// Buttons
+$basic-dark-btn-color:          $custom-violet-dark-color; 
+$basic-light-btn-color:         $custom-yellow-medium-color;
+
+
+/* Shadows */
+
+$basic-shadow:                    0px 5px 8px #2E8FF029;
+
+
+/* Size variables */
+
+$basic-font-size:               16px;
+
+
+/* Indents */
+
+$basic-padding:                 16px;
+$btn-padding:                   8px;
+$input-padding:                 8px;
+
+$basic-border-radius:           8px;
+
+
+/* Fonts */
+
+$basic-font-family:             Helvetica;
+

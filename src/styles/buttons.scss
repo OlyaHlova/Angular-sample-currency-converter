@@ -1,0 +1,28 @@
+.btn {
+    padding: $btn-padding;
+    font-size: 14px;
+    line-height: 17px; 
+    border: none;
+    border-radius: $basic-border-radius;
+    box-shadow: $basic-shadow;
+
+    &.prime {
+        background-color: $basic-dark-btn-color;
+        color: $basic-light-font-color; 
+    }
+
+    &.secondary{
+        background-color: $basic-light-btn-color;
+        color: $basic-dark-font-color;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {  
+        opacity: 0.85;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}
