@@ -1,9 +1,11 @@
 <div class="exchange container">
     <h2 class="title">Exchange Rates</h2>
-    <div *ngFor="let currency of currencies; let i = index">
-        <div class="card" *ngIf="i !== 0">
-            <span class="desc">{{ currency }} to UAH:</span> 
-            <span class="value">{{ rate[currency] | number : '1.0-2' }}</span>
+    <div class="cards">
+        <div *ngFor="let currency of currencies; let i = index">
+            <div class="card" *ngIf="i !== 0">
+                <span class="desc">{{ currency }} to UAH:</span> 
+                <span class="value">{{ rate[currency] | number : '1.0-2' }}</span>
+            </div>
         </div>
-      </div>
+    </div>
   </div>
