@@ -8,39 +8,39 @@ body, h1, h2 {
 body {
     font-family: $basic-font-family;
     color: $basic-dark-font-color;
-    font-size: $basic-font-size;
+    font-size: $basic-font-size;height: 100vh;
+    background: linear-gradient(45deg, $basic-light-bg-color, 
+                                       $basic-filling-bg-color,
+                                       $secondary-filling-bg-color, 
+                                       $basic-light-bg-color); 
+    background-size: 400% 100%; 
+    
+    animation: moveBackground 30s linear infinite;
+
+    @keyframes moveBackground {
+        0%, 100% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 100% 0;
+        }
+        75% {
+            background-position: 100% 0;
+        }
+    }
+
 }
  
 .container {
     max-width: 1200px; 
     padding: $basic-padding;
+    margin: auto;
 }
 
 .main {
     padding: 0;
 
     &-bg {
-        height: 100vh;
-        background: linear-gradient(45deg, $basic-light-bg-color, 
-                                           $basic-filling-bg-color,
-                                           $secondary-filling-bg-color, 
-                                           $basic-light-bg-color); 
-        background-size: 400% 100%; 
-        
-        animation: moveBackground 30s linear infinite;
-
-        @keyframes moveBackground {
-            0%, 100% {
-                background-position: 0 0;
-            }
-            50% {
-                background-position: 100% 0;
-            }
-            75% {
-                background-position: 100% 0;
-            }
-        }
-
         > .container{
             padding: 0;
         }
